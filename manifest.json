@@ -1,0 +1,15 @@
+{
+    "manifest_version": 3,
+    "name": "Water Reminder",
+    "version": "1.0",
+    "description": "Custom water reminder extension",
+    "permissions": ["alarms", "system.display", "storage","windows"],
+    "background": {
+        "service_worker": "background.js"
+    },
+    "action": {
+      "default_popup":"popup.html",
+      "default_icon":"glass.png"
+    }
+  }
+  
