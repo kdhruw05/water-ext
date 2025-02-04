@@ -21,12 +21,12 @@ document.addEventListener("DOMContentLoaded", function () {
         }
     });
 
-    addWaterBtn.addEventListener("click", () => {
-        chrome.storage.sync.get({ waterCount: 0 }, (data) => {
-            let newCount = data.waterCount + 1;
-            chrome.storage.sync.set({ waterCount: newCount }, () => {
-                intakeCount.innerText = `🌊 Total: ${newCount} glasses`;
-            });
-        });
-    });
+    // addWaterBtn.addEventListener("click", () => {
+    //     chrome.storage.sync.get({ waterCount: 0 }, (data) => {
+    //         let newCount = data.waterCount + 1;
+    //         chrome.storage.sync.set({ waterCount: newCount }, () => {
+    //             intakeCount.innerText = `🌊 Total: ${newCount} glasses`;
+    //         });
+    //     });
+    // });
 });
